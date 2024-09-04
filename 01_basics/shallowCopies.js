@@ -14,7 +14,6 @@ console.log(arr1);
 
 
 
-/
 
 let newArr1 = new Array('a','e','i');
 let  newArr2 = newArr1;

@@ -41,7 +41,7 @@ const results2 = br.splice(1,5);  //last index is included in splice() and the p
 console.log('RESULTS OF SPLICE ',results2);
 console.log('original array after splice', br);
 
-
+      
 /////////
 
 let marvel_heros = ['spiderman','hulk','ironman'];

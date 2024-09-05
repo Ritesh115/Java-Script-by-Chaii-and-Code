@@ -1,10 +1,10 @@
 console.log('objects 2');
- 
+
 const obj = new Object();
 obj.name = 'RItesh';
 obj.age = 24;
 obj.gender = 'Male';
-obj.greeting = ()=>{
+obj.greeting = () => {
   console.log('hello there ...');
 }
 
@@ -12,8 +12,8 @@ console.log(obj);
 
 // how to merge to objects
 
-const obj1 = {1:'a',2:'b'};
-const obj2 = {3:'c',4:'d'};
+const obj1 = { 1: 'a', 2: 'b' };
+const obj2 = { 3: 'c', 4: 'd' };
 
 // const obj3 = {obj1,obj2};
 // console.log(obj3)
@@ -25,7 +25,7 @@ const obj2 = {3:'c',4:'d'};
 
 
 
-const obj3 = {...obj1 , ...obj2}
+const obj3 = { ...obj1, ...obj2 }
 console.log(obj3);
 
 
@@ -34,6 +34,5 @@ console.log(obj3);
 
 console.log(Object.keys(obj1));
 console.log(Object.values(obj2));
-
 
 

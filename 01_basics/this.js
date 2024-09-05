@@ -9,4 +9,16 @@ const user = {
 }
 user.welcomeMessage(); //welcomeMessage is method
 
-console.log(this); // here this refre to the window object
+console.log(this); // here this refer to the node context thats why empty {} is returned.
+
+function fun() {
+  console.log(this);
+}
+fun(); // in function this refer to GLOBAL context.
+
+// function log() {
+//   const user = "ritesh";   ==>> O/P will be undefined becs this is not used.  
+//   console.log(this.user);
+// }
+
+// log()

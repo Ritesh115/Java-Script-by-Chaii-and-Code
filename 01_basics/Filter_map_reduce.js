@@ -37,7 +37,8 @@ console.log('hello',Val2);
 
 //Return a new array with the square root of all element values:
 const v = [4,9,16,25];
-const ab = v.map( (item) => item>10);
+const ab = v.map( (item) => Math.sqrt(item) ); 
+//MAP cant be used for condition  , it is only used for operation on values.
 console.log(ab);
 
 //CHANNING
@@ -50,9 +51,18 @@ const ch = myNumber
 console.log(ch);
 
 
+//REDUCE
+//1. reduce stores every result in a 3 variable. ie accumulator
+//2. accumulator dont from where to start thats why we give it a val after callback ie example 0.
+//3. accumulator will store every value like sum = sum +i.
+//4.currnetval indicates the everyvalue in array.
+const myArr = [1,2,3];
 
+const cb = myArr.reduce( (accumulator , currentValue)=> {
+  return accumulator + currentValue ;
+} , 0); // here 0 is the initial val of accumulator.
 
-
+console.log(cb);
 
 
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit and Remove Elements</title>
+</head>
+<body>
+  <ul class="language">
+     <li>javascript</li>
+  </ul>
+  <script>
+    //insted of ysng fynction to create element again and again we make a fynction ..
+
+
+    function addLangyage(langName){
+ 
+      const li = document.createElement('li');
+      li.innerHTML = `${langName}`;
+document.querySelector('.language').appendChild(li);
+    }
+    addLangyage('python');
+    addLangyage('c/c++');
+
+
+    function addOptiLangyage(langName){
+       const li = document.createElement('li');
+       li.appendChild(document.createTextNode(langName));     document.querySelector('.language').appendChild(li);
+      }
+      addOptiLangyage('hello')
+
+
+
+    //EDIT
+
+    //select child directly any 
+    const secondLang = document.querySelector('li:nth-child(2)');
+    //first-child
+    //last-child
+    //nth-child()
+
+    const newLi = document.createTextNode('ryby');
+
+    secondLang.replaceWith(newLi); // yse replacewith 
+
+//REMOVE
+
+ 
+const lastLang = document.querySelector('li:last-child');
+
+lastLang.remove();
+      
+
+  </script>
+</body>
+</html>

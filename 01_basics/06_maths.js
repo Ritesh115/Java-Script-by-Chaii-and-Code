@@ -4,7 +4,7 @@ console.log(typeof str);
 console.log(str.toString());
 
 let newStr = [1, 2, 3, 4, 5];
-let newString = newStr.toString(newStr);
+let newString = newStr.toString();
 console.log(typeof newString);//TO convert anything to string
 
 //TO CONVERT A VALUE INTO PRECISEVALUE WE USE toPrescision function.
@@ -19,12 +19,12 @@ console.log(Math);
 
 console.log(Math.abs(-4));//cconvert -ve to positive.
 console.log(Math.round(4.2));//round to nearest integer
-console.log(Math.ceil(4.2));//top value
+console.log(Math.ceil(4.01));//top value
 console.log(Math.floor(4.2));
 
 
 
-console.log(Math.random());///gives rrandom value
+console.log(Math.random());///gives rrandom value gives a  0.something no
 console.log((Math.random() * 10));//WILL give number but not 0.something
 console.log((Math.random() * 10) + 1);//becs of 0.014 so thats why +1;
 

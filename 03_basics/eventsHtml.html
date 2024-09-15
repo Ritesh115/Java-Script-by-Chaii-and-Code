@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENTS</title>
+</head>
+
+<body style="background-color: #414141;">
+
+  <ul style="list-style: none" id="image">
+    <li id="cat"><img src="/image/cat.jpeg" alt="cat"></li>
+    <li id="messi"><img src="/image/messi.jpeg" alt="messi"></li>
+    <li id="owl"><img src="/image/owl.jpeg" alt="owl"></li>
+    <li id="dog"><img src="/image/dog.jpeg" alt="dog"></li>
+    <li id="parrat"><img src="/image/parrot.jpeg" alt="parrot"></li>
+  </ul>
+
+  <!-- dont yse onclick attribyte its bad practice. -->
+
+
+  <script>
+    // document.getElementById('messi').addEventListener('click', (e) => {
+    //   console.log(e);
+    //   let date = new Date();
+    //   console.log(date.toLocaleTimeString());
+    // }) 
+
+
+//STEP 2
+
+document.querySelector('#image').addEventListener('click' , (e) => {
+  console.log(e.target.parentNode);
+  let removeIt = e.target.parentNode
+  removeIt.remove();
+})
+
+
+
+
+  </script>
+
+</body>
+
+</html>

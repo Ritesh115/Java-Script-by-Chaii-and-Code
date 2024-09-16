@@ -31,8 +31,10 @@
 //STEP 2
 
 document.querySelector('#image').addEventListener('click' , (e) => {
-  console.log(e.target.parentNode);
+  // console.log(e.target.parentNode);
+  console.log(e.target);
   let removeIt = e.target.parentNode
+  console.log('parent : ' , removeIt);
   removeIt.remove();
 })
 

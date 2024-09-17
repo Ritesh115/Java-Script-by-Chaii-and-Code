@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Async Await</title>
+</head>
+<body>
+  <h1>Hello AsyncAwait</h1>
+  <button type="submit" id="stop">stop</button>
+
+
+  <script>
+    const sayRitesh = function(){
+      console.log('hello there 3..');
+    }
+    
+    // setTimeout( () => {
+    //   console.log('hello there..');
+    // } , 3000 );
+    const clear = setTimeout(sayRitesh , 2000);
+
+    const changeValye = document.querySelector('h1');
+    changeValye.innerHTML = 'lol async await';
+
+
+    // i want to stop the async fynction 
+
+    document.querySelector('#stop').
+    addEventListener('click' , ()=>{
+      clearTimeout(clear);
+      console.log('STOPPED');
+    } )
+
+  </script>
+</body>
+</html>
